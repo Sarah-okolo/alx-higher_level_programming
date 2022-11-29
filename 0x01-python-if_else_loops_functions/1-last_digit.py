@@ -1,10 +1,15 @@
 #!/usr/bin/python3
 import random
+import math
 
 number = random.randint(-10000, 10000)
 numstr = repr(number)
 lastNum = numstr[-1:]
 lastNum = int(lastNum)
+
+if number < 0:
+    lastNum = -lastNum
+
 print(f"Last digit of {number:d} is {lastNum:d}", end=" ")
 
 if lastNum > 5:
