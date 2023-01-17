@@ -1,9 +1,13 @@
+#!/usr/bin/python3
+
 import sys
 
-args = sys.argv[1:]
-result = 0
+if __name__ == "__main__":
 
-for arg in args:
-    result += int(arg)
+    args = sys.argv[1:]
+    result = 0
 
-print(result)
+    for arg in args:
+        result += int(arg)
+
+    print(result)
