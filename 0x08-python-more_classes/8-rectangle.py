@@ -69,7 +69,7 @@ class Rectangle:
                     rectangle += str(self.print_symbol)
                 except Exception:
                     rectangle += type(self).print_symbol
-                        if column < self.__height - 1:
+            if column < self.__height - 1:
                 rectangle += "\n"
         return (rectangle)
 
