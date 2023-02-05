@@ -82,6 +82,7 @@ def xout(board, row, col):
         board[r][c] = "x"
         c -= 1
 
+
 def recursive_solve(board, row, queens, solutions):
     """Recursively solve an N-queens puzzle.
 
