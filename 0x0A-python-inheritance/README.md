@@ -32,6 +32,13 @@ A function that returns **True** if the object is an instance of a class that in
 - Not allowed to import any module
 
 ## [5. Geometry module](5-base_geometry.py)
-An empty class BaseGeometry.
+An empty class ```BaseGeometry```.
 
+- Not allowed to import any module
+
+## [6. Improve Geometry](6-base_geometry.py)
+A class ```BaseGeometry```(based on [5-base_geometry.py](5-base_geometry.py) ).
+
+- Public instance method: ```def area(self):```
+- Raises an Exception with the message area() is not implemented
 - Not allowed to import any module
