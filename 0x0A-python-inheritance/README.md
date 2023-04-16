@@ -44,7 +44,7 @@ A class ```BaseGeometry```(based on [5-base_geometry.py](5-base_geometry.py) ).
 - Not allowed to import any module
 
 ## [7. Integer validator](7-base_geometry.py)
-A class ```BaseGeometry``` (based on [6-base_geometry.py](7-base_geometry.py) ).
+A class ```BaseGeometry``` (based on [6-base_geometry.py](6-base_geometry.py) ).
 
 - Public instance method:``` def area(self):``` that raises an Exception with the message area() is not implemented
 Public instance method: ```def integer_validator(self, name, value):``` that validates value:
@@ -60,11 +60,31 @@ A class Rectangle that inherits from ```BaseGeometry``` ( [7-base_geometry.py](7
 - Width and height is private. No getter or setter
 - Width and height is positive integers, validated by integer_validator
 
+## [9. Full rectangle](9-rectangle.py)
+ A class Rectangle that inherits from ```BaseGeometry``` ( [7-base_geometry.py](7-base_geometry.py) ). (task based on [8-rectangle.py](8-rectangle.py) )
 
+- Instantiation with width and height: ```def __init__(self, width, height)::```
+- Width and height must be private. No getter or setter
+- Width and height must be positive integers validated by integer_validator
+- The `area()` method must be implemented
+- `print()`should print, and `str()` should return, the following rectangle description: [Rectangle] <width>/<height>
 
+## [10. Square #1](10-square.py)
+A class Square that inherits from `Rectangle` ( [9-rectangle.py](9-rectangle.py) )
 
+- Instantiation with size: ```def __init__(self, size)::```
+- Size must be private. No getter or setter
+- Size must be a positive integer, validated by integer_validator
+- The `area()` method must be implemented
 
+## [11. Square #2](11-square.py)
+A class Square that inherits from `Rectangle` ( [9-rectangle.py](9-rectangle.py) ). (task based on [10-square.py](10-square.py) ).
 
+- Instantiation with size: ```def __init__(self, size)::```
+- Size must be private. No getter or setter
+- Size must be a positive integer, validated by integer_validator
+- The `area()` method must be implemented
+- `print()` should print, and `str()` should return, the square description: [Square] <width>/<height>
 
 
 
