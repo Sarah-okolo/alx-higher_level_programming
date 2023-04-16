@@ -42,3 +42,32 @@ A class ```BaseGeometry```(based on [5-base_geometry.py](5-base_geometry.py) ).
 - Public instance method: ```def area(self):```
 - Raises an Exception with the message area() is not implemented
 - Not allowed to import any module
+
+## [7. Integer validator](7-base_geometry.py)
+A class ```BaseGeometry``` (based on [6-base_geometry.py](7-base_geometry.py) ).
+
+- Public instance method:``` def area(self):``` that raises an Exception with the message area() is not implemented
+Public instance method: ```def integer_validator(self, name, value):``` that validates value:
+- Assume name is always a string
+- If value is not an integer: raise a `TypeError`exception, with the message <name> must be an integer
+- If value is less or equal to 0: raise a `ValueError` exception with the message <name> must be greater than 0
+- Not allowed to import any module
+
+## [8. Rectangle](8-rectangle.py)
+A class Rectangle that inherits from ```BaseGeometry``` ( [7-base_geometry.py](7-base_geometry.py) ).
+
+- Instantiation with width and height: ```def __init__(self, width, height):```
+- Width and height is private. No getter or setter
+- Width and height is positive integers, validated by integer_validator
+
+
+
+
+
+
+
+
+
+
+
+
