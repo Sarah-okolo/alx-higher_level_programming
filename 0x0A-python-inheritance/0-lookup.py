@@ -7,5 +7,5 @@
 
 
 def lookup(obj):
-    """returns a list object"""
+    """returns a list of attributes and methods of a given object"""
     return dir(obj)
